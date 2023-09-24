@@ -64,6 +64,7 @@ include(FetchContent)
 FetchContent_Declare(LoguruGitRepo
     GIT_REPOSITORY "https://github.com/emilk/loguru" # can be a filesystem path
     GIT_TAG "master"
+    FIND_PACKAGE_ARGS NAMES "loguru"
 )
 
 # set any loguru compile-time flags before calling MakeAvailable()
